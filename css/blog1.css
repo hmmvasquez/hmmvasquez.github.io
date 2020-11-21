@@ -1,0 +1,120 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('./partials/_variables.css');
+
+
+  /***blog***/
+.post {
+    background-color: var(--background-color);
+}
+
+.primary-title h1 {
+    font-family: 'Montserrat',sans-serif;
+    color: var(--paragraph-color);
+}
+
+.post .title-container {
+    margin: 0;
+} 
+
+.box{
+	margin-top: 10px;
+    width:75%;
+	margin-left: auto ;
+    margin-right: auto ;
+    height: 600px;
+}
+
+.blog-post{
+	margin-top:20px;
+	float:left;
+}
+.blog-heading{
+	font-size: 36px;
+    margin-bottom:20px;
+    font-family: 'Montserrat',sans-serif;
+    color: var(--paragraph-color);
+}
+
+.blog-body {
+    font-family: 'Roboto',sans-serif;
+    color: var(--paragraph-color);
+}
+
+@media only screen and (max-width: 998px) {
+  .box {
+    margin-top: 10px;
+    width:75%;
+	margin-left: auto ;
+    margin-right: auto ;
+    height: 900px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    margin-top: 10px;
+    width:100%;
+	margin-left: auto ;
+    margin-right: auto ;
+    height: 1000px;
+  }
+}
+
+ /* ========= Footer ======== */
+ .footer {
+    background-color: var(--paragraph-color);
+    padding: 6rem 1rem;
+    line-height: 3rem;
+  }
+  
+  .footer-center span {
+    margin-right: 1rem;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: var(--secondary-color);
+  }
+  
+  .footer-center a:link,
+  .footer-center a:visited {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    color: var(--highlight-color);
+    font-size: 1.4rem;
+    transition: 0.6s;
+  }
+  
+  .footer-center a:hover {
+    color: var(--background-color);
+  }
+  
+  .footer-center div {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+  }
+  
+  .footer-center h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  @media only screen and (max-width: 998px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+  }
